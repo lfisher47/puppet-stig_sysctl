@@ -1,7 +1,5 @@
 class stig_sysctl {
 
-  sysctl::base { purge => true }
-
   #RHEL-06-000078
   sysctl { 'kernel.randomize_va_space': value => '2' }
   #RHEL-06-000079
