@@ -1,0 +1,29 @@
+{
+  "name": "lfisher47-stig_sysctl",
+  "version": "0.0.1",
+  "author": "lfisher47",
+  "summary": "SYSCTL STIG rule enforement",
+  "license": "GNU GPL 2.0",
+  "source": "git://github.com/lfisher47/puppet-stig_sysctl",
+  "project_page": "https://github.com/lfisher47/puppet-stig_sysctl",
+  "issues_url": "https://github.com/lfisher47/puppet-stig_sysctl/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6"
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">=2.7.20 <4.0.0"
+    }
+  ],
+  "description": "Auditd STIG module",
+  "dependencies": [
+      "name": "thias/sysctl"
+  ]
+}
