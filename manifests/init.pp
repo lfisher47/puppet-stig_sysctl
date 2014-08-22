@@ -36,5 +36,7 @@ class stig_sysctl {
   sysctl { 'net.ipv4.conf.default.rp_filter': value => '1' }
   #RHEL-06-000099
   sysctl { 'net.ipv6.conf.default.accept_redirects': value => '0' }
+  #2.2.4.2
+  sysctl { 'fs.suid_dumpable': value => '0' }
   
 }

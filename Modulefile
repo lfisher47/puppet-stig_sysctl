@@ -1,5 +1,5 @@
 name    'lfisher47-stig_sysctl'
-version '0.0.1'
+version '0.0.2'
 author  'Leah Fisher'
 license 'Apache2'
 project_page 'https://github.com/lfisher47/puppet-stig_sysctl'
