@@ -38,4 +38,82 @@ Compatible with the following platforms.
 
 # Parameters
 
-This module has no parameters
+## `randomize_va_space`
+
+Sets the default value for the sysctl parameter kernel.randomize_va_space to 2.
+
+## `exec_shield`
+
+Sets the default value for the sysctl parameter kernel.exec-shield to 1.
+
+## `default_send_redirects`
+
+Sets the default value for the sysctl parameter net.ipv4.conf.default.send_redirects to 0.
+
+## `all_send_redirects`
+
+Sets the default value for the sysctl parameter net.ipv4.conf.all.send_redirects to 0.
+
+## `ip_forward`
+
+Sets the default value for the sysctl parameter net.ipv4.ip_forward to 0.
+
+## `all_accept_source_route`
+
+Sets the default value for the sysctl parameter net.ipv4.conf.all.accept_source_route to 0.
+
+## `all_accept_redirects`
+
+Sets the default value for the sysctl parameter net.ipv4.conf.all.accept_redirects to 0.
+
+## `all_secure_redirects`
+
+Sets the default value for the sysctl parameter net.ipv4.conf.all.secure_redirects to 0.
+
+## `log_martians`
+
+Sets the default value for the sysctl parameter net.ipv4.conf.default.log_martians to 1.
+
+## `default_accept_source_route`
+
+Sets the default value for the sysctl parameter net.ipv4.conf.default.accept_source_route to 0.
+
+## `default_accept_redirects`
+
+Sets the default value for the sysctl parameter net.ipv4.conf.default.accept_redirects to 0.
+
+## `default_secure_redirects`
+
+Sets the default value for the sysctl parameter net.ipv4.conf.default.secure_redirects to 0.
+
+## `icmp_echo_ignore_broadcasts`
+
+Sets the default value for the sysctl parameter net.ipv4.icmp_echo_ignore_broadcasts to 1.
+
+## `icmp_ignore_bogus_error_responses`
+
+Sets the default value for the sysctl parameter net.ipv4.icmp_ignore_bogus_error_responses to 1.
+
+## `tcp_syncookies`
+
+Sets the default value for the sysctl parameter net.ipv4.tcp_syncookies to 1.
+
+## `all_rp_filter`
+
+Sets the default value for the sysctl parameter net.ipv4.conf.all.rp_filter to 1.
+
+## `default_rp_filter`
+
+Sets the default value for the sysctl parameter net.ipv4.conf.default.rp_filter to 1.
+
+## `ipv6_default_accept_redirects`
+
+Sets the default value for the sysctl parameter net.ipv6.conf.default.accept_redirects to 0.  This can only be set if the ipv6 kernel module is enabled.
+
+## `suid_dumpable`
+
+Sets the default value for the sysctl parameter fs.suid_dumpable to 0.
+
+## `ipv6_enabled`
+
+This variable is tells the module whether to set the ipv6 parameters since if the system has ipv6 turned off in the kernel, the ipv6 sysctl parameters will throw an error as they don't exist.
