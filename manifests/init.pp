@@ -19,6 +19,7 @@ class stig_sysctl (
   $ipv6_default_accept_redirects     = '0',
   $suid_dumpable                     = '0',
   $ipv6_enabled                      = false,
+  $tcp_timestamps                    = '0',
 )
 {
 
@@ -28,7 +29,9 @@ class stig_sysctl (
   #RHEL-06-000078
   sysctl { 'kernel.randomize_va_space': value => $randomize_va_space }
   #RHEL-06-000079
-  sysctl { 'kernel.exec-shield': value => $exec_shield }
+  if ( $::osfamily == 'RedHat' and $::operatingsystemmajrelease < '7' ) {
+    sysctl { 'kernel.exec-shield': value => $exec_shield }
+  }
   #RHEL-06-000080
   sysctl { 'net.ipv4.conf.default.send_redirects': value => $default_send_redirects }
   #RHEL-06-000081
@@ -65,5 +68,7 @@ class stig_sysctl (
   }
   #2.2.4.2
   sysctl { 'fs.suid_dumpable': value => $suid_dumpable }
+  #Vulnerability detected
+  sysctl { 'net.ipv4.tcp_timestamps': value => $tcp_timestamps }
   
 }
