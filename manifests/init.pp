@@ -29,7 +29,7 @@ class stig_sysctl (
   #RHEL-06-000078
   sysctl { 'kernel.randomize_va_space': value => $randomize_va_space }
   #RHEL-06-000079
-  if ( $::osfamily == 'RedHat' and $::operatingsystemmajrelease < '7' ) {
+  if ( $::osfamily == 'RedHat' and Integer($::operatingsystemmajrelease) < 7 ) {
     sysctl { 'kernel.exec-shield': value => $exec_shield }
   }
   #RHEL-06-000080
