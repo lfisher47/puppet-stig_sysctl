@@ -1,0 +1,14 @@
+{
+  "name": "lfisher47-stig_sysctl",
+  "version": "0.0.5",
+  "author":  "Leah Fisher",
+  "license": "Apache2",
+  "project_page": "https://github.com/lfisher47/puppet-stig_sysctl",
+  "source":  "git://github.com/lfisher47/puppet-stig_sysctl",
+  "summary": "Sysctl STIG requirements",
+  "description": "Sysctl STIG requirements",
+  "dependencies": [
+    {"name": "thias/sysctl"},
+    {"name":"puppetlabs/stdlib"}
+  ]
+}
